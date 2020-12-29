@@ -8,7 +8,15 @@ number=10
 str_number=str(number)
 
 #Concat to 1 string
-string=name+'_'+str_number
+con_string=name+'_'+str_number
 
-#commentaar
-print(string)
+#import csv to dataframe
+airports_df=pd.read_csv('airports.csv')
+
+df_read= airports_df["city"]
+
+
+#commentaar bij print
+#print(con_string)
+
+print(df_read)
